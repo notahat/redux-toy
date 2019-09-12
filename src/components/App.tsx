@@ -1,11 +1,11 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { State } from "../state/types"
 import { Dispatch } from "../actions/types"
+import counterValue from "../selectors/counterValue"
 import countDown from "../actions/countDown"
 
 function App() {
-  const counter = useSelector((state: State) => state.counter)
+  const counter = useSelector(counterValue)
   const dispatch: Dispatch = useDispatch()
 
   const decrementBy10 = () => dispatch({ type: "DECREMENT_BY", by: 10 })
