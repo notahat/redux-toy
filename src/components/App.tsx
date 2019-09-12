@@ -4,7 +4,7 @@ import { Dispatch } from "../actions/types"
 import counterValue from "../selectors/counterValue"
 import countDown from "../actions/countDown"
 
-function App() {
+const App: React.FunctionComponent = () => {
   const counter = useSelector(counterValue)
   const dispatch: Dispatch = useDispatch()
 
