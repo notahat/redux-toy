@@ -1,19 +1,10 @@
-export type CounterState = number
+import { Action } from "./actions"
+import { CounterState } from "./counterState"
 
-export interface IncrementAction {
-  type: "increment"
-}
-
-export interface DecrementAction {
-  type: "decrement"
-}
-
-export type CounterAction = IncrementAction | DecrementAction
-
-const counterReducer = (state: CounterState = 1, action: CounterAction) => {
+const counterReducer = (state: CounterState = 1, action: Action) => {
   switch (action.type) {
     case "increment":
-      return state + 1
+      return state + action.by
     case "decrement":
       return state - 1
     default:
