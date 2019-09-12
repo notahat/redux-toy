@@ -1,8 +1,8 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { State } from "./state/types"
-import { Dispatch } from "./actions/types"
-import countDown from "./actions/countDown"
+import { State } from "../state/types"
+import { Dispatch } from "../actions/types"
+import countDown from "../actions/countDown"
 
 function App() {
   const counter = useSelector((state: State) => state.counter)
