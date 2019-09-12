@@ -1,14 +1,1 @@
 semi: false
-trailingComma: es5
-printWidth: 100
-proseWrap: always
-# Translation files we send to agencies should display copy on a single line.
-# File names are in the pattern `[name].[language].js` or `[name].[language].jsx`.
-# Intention here is that capture all those and exclude test files that have a
-# similar file naming pattern.
-overrides:
-- files: ["**/components/**/*.??.{js,jsx}", "**/pages/**/*.??.{js,jsx}", "**/elements-components/**/*.??.{js,jsx}", "**/components/**/*.??-???.{js,jsx}", "**/pages/**/*.??-???.{js,jsx}", "**/elements-components/**/*.??-???.{js,jsx}"]
-  excludeFiles: ["*.en.{js,jsx}"]
-  options:
-    proseWrap: never
-    printWidth: 2000
