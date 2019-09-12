@@ -1,5 +1,5 @@
 import { Reducer } from "redux"
-import { Action } from "../actions"
+import { Action } from "../actions/types"
 
 export type CounterState = number
 

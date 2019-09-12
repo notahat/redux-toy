@@ -1,5 +1,5 @@
 import { ThunkDispatch } from "redux-thunk"
-import { State } from "../state"
+import { State } from "../state/types"
 
 export interface DecrementAction {
   type: "DECREMENT"

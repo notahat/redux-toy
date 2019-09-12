@@ -1,5 +1,5 @@
-import { Dispatch } from "."
-import { State } from "../state"
+import { Dispatch } from "./types"
+import { State } from "../state/types"
 
 function timeout(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms))

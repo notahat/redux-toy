@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import { Provider } from "react-redux"
 import { createStore, applyMiddleware } from "redux"
 import thunk from "redux-thunk"
-import { reducer } from "./state"
+import reducer from "./state/reducer"
 import App from "./App"
 
 const store = createStore(reducer, applyMiddleware(thunk))

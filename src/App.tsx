@@ -1,7 +1,7 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { State } from "./state"
-import { Dispatch } from "./actions"
+import { State } from "./state/types"
+import { Dispatch } from "./actions/types"
 import countDown from "./actions/countDown"
 
 function App() {
