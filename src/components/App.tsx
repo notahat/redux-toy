@@ -1,13 +1,16 @@
 import React from "react"
-import { useDispatch, useSelector } from "react-redux"
 import { Dispatch } from "../actions/types"
-import counterValue from "../selectors/counterValue"
 import countDown from "../actions/countDown"
 
-const App: React.FunctionComponent = () => {
-  const counter = useSelector(counterValue)
-  const dispatch: Dispatch = useDispatch()
+interface AppProps {
+  counter: number
+  dispatch: Dispatch
+}
 
+export const App: React.FunctionComponent<AppProps> = ({
+  counter,
+  dispatch
+}) => {
   const decrementBy10 = () => dispatch({ type: "DECREMENT_BY", by: 10 })
   const decrement = () => dispatch({ type: "DECREMENT" })
   const increment = () => dispatch({ type: "INCREMENT" })
