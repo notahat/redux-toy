@@ -9,7 +9,7 @@ const App: React.FunctionComponent = () => {
   const dispatch: Dispatch = useDispatch()
 
   const decrementBy10 = () => dispatch({ type: "DECREMENT_BY", by: 10 })
-  const decrement = () => dispatch({ type: "DECREMENT", extra: 4 })
+  const decrement = () => dispatch({ type: "DECREMENT" })
   const increment = () => dispatch({ type: "INCREMENT" })
   const incrementBy10 = () => dispatch({ type: "INCREMENT_BY", by: 10 })
 
